@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id:</strong>
+  <%= @connection.id %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @connection.name %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @connection.type %>
+</p>
+
+<p>
+  <strong>Revoked:</strong>
+  <%= @connection.revoked %>
+</p>
+
+<p>
+  <strong>Visibility:</strong>
+  <%= @connection.visibility %>
+</p>
+
+<%= link_to 'Edit', edit_connection_path(@connection) %> |
+<%= link_to 'Back', connections_path %>

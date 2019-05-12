@@ -59,6 +59,7 @@ GEM
     bindex (0.7.0)
     bootsnap (1.4.4)
       msgpack (~> 1.0)
+    bson (4.4.2)
     builder (3.2.3)
     byebug (11.0.1)
     concurrent-ruby (1.1.5)
@@ -84,6 +85,11 @@ GEM
     mini_mime (1.0.1)
     mini_portile2 (2.4.0)
     minitest (5.11.3)
+    mongo (2.8.0)
+      bson (>= 4.4.2, < 5.0.0)
+    mongoid (7.0.2)
+      activemodel (>= 5.1, < 6.0.0)
+      mongo (>= 2.5.1, < 3.0.0)
     msgpack (1.2.10-x64-mingw32)
     multi_json (1.13.1)
     nio4r (2.3.1)
@@ -175,6 +181,7 @@ DEPENDENCIES
   bootsnap (>= 1.4.2)
   byebug
   jbuilder (~> 2.5)
+  mongoid
   pg (>= 0.18, < 2.0)
   puma (~> 3.11)
   rails (~> 6.0.0.rc1)
