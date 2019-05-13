@@ -13,6 +13,7 @@ class AuthenticateController < ApplicationController
         scope: "email identify guilds connections",
         code: params[:code]
     }
-    RestClient.post("https://discordapp.com/api/oauth2/token", data, content_type: :json)
+    resp = RestClient.post("https://discordapp.com/api/oauth2/token", data, content_type: :json)
+    p resp
   end
 end
